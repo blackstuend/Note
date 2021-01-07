@@ -23,7 +23,7 @@
         ```
         * 新增 mongod.log檔案進 C:\data\log
     * 接著去剛剛安裝db的位置新增配置檔案
-    ![Db位置](./2020-12-24-160129.jpg)
+    ![Db位置](https://github.com/blackstuend/Note/blob/master/mongo/2020-12-24-160129.jpg?raw=true)
     * 建立檔名:mongod.cfg
         * 如果沒有權限 建議先在桌面新增完在拉進去
         * systemLog：path 為前步驟 log 資料夾位置
