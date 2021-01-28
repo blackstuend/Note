@@ -40,3 +40,27 @@
     bottom: 0;
 }
 ```
+
+* 使用bootstrap 4
+
+* 將寬限制好加上 text-truncate就可以自動省略了，但是這邊只能用單行的，是利用white-space:nowrap讓他不換行加上overflow: hidden;做的~
+
+```html
+<div class="row">
+  <div class="col-2 text-truncate">
+    Praeterea iter est quasdam res quas ex communi.
+  </div>
+</div>
+
+<style>
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+</style>
+```
+
+
+
+
+參考: https://getbootstrap.com/docs/4.0/utilities/text/
