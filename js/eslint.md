@@ -70,3 +70,24 @@ $ eslint --init
     "source.fixAll.eslint": true
 }
 ```
+
+## 加入Prettier ESLINT
+* 他會去依照 .eslintrc 裡面的內容去做排版在排html或是空格時特別方便的
+
+### 安裝
+![](./2021-03-17-230211.png)
+
+
+### 使用
+* Windows 自動排版
+1. 使用default自動排版 > Shift + Alt + F
+2. 每一次選取排版 > Shift + Ctrl + P > 選擇Format Document
+然後選取Prettier ESLINT
+* MAC
+1.  CMD + Shift + P -> Format Document
+
+* 儲存自動排版
+1. 將以下內容加進 Edit in Setting.json,即可儲存自動排版
+```json
+"editor.formatOnSave": true
+```
