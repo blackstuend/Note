@@ -1,0 +1,38 @@
+# Caddy
+
+## Introduction
+
+* 傳統使用nginx來做反向代理,使用Caddy可以更加快速地做使用
+
+## Install
+
+```
+$ brew install caddy
+```
+
+## Usage
+
+### Proxy
+
+* 當網址輸入https://localhost:3002 ,會代理到port 3000的server
+```
+$ caddy reverse-proxy --from :3002 --to 127.0.0.1:3000
+```
+
+* 當不輸入時,會自動使用https://localhost 來做代理
+
+```
+$ caddy reverse-proxy --to 127.0.0.1:3000
+```
+
+### CaddyFile
+
+```
+example.com {
+    reverse_proxy 127.0.0.1:3002
+    tls /usr/local/etc/nginx/ssl/server.crt /usr/local/etc/nginx/ssl/server.key
+}
+```
+
+### 參考資料
+1. [Caddy官方](https://caddyserver.com/docs/)
