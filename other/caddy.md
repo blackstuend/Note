@@ -27,10 +27,28 @@ $ caddy reverse-proxy --to 127.0.0.1:3000
 
 ### CaddyFile
 
+* proxy
 ```
 example.com {
     reverse_proxy 127.0.0.1:3002
     tls /usr/local/etc/nginx/ssl/server.crt /usr/local/etc/nginx/ssl/server.key
+}
+```
+
+* static
+
+```
+*:8080 {
+    root /path/to/html
+    errors {
+        404 404.html
+    }
+    gzip
+    expires {
+        match .html$ 1d
+        match .xml$ 1d
+        match .json$ 1d
+    }
 }
 ```
 
