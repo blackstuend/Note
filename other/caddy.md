@@ -54,4 +54,4 @@ example.com {
 
 ### 參考資料
 1. [Caddy官方](https://caddyserver.com/docs/)
-2. [Caddy教學](https://www.thepolyglotdeveloper.com/2018/07/serve-web-applications-minimal-effort-caddy/)
+2. [flysnow Blog(中文且滿詳細)](https://www.flysnow.org/categories/Caddy/)
