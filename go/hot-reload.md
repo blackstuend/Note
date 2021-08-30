@@ -22,3 +22,5 @@ $ cd /path/to/your_project
 $ air init
 $ air -c .air.toml
 ```
+
+參考:https://github.com/cosmtrek/air
