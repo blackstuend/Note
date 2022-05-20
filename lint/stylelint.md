@@ -40,7 +40,7 @@ module.exports = {
     1. 安裝套件
     
     ```
-    $ npm install --save-dev postcss-html stylelint-config-recommended-vue
+    $ npm install --save-dev postcss-html stylelint-config-recommended-vue stylelint-config-recommended-scss
     ```
 
     2. 調整 ".stylelintrc.js"
@@ -49,7 +49,8 @@ module.exports = {
     module.exports = {
         "extends": [
             "stylelint-config-standard",
-            "stylelint-config-recommended-vue" // 讓 vue 的檔案也能吃到 .stylelint
+            "stylelint-config-recommended-vue", // 讓 vue 的檔案也能吃到 .stylelint
+            "stylelint-config-recommended-vue/scss"  // 假如有用 scss 可以改用這個
         ],
     } 
     ```
