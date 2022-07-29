@@ -25,7 +25,7 @@ module.exports = {
 3. 設置 vscode 自動保存會做 format
     1. 安裝 stylelint extension
     ![stylelint](./2022-05-20-stylelint.png)
-```
+```json
 {
     "editor.codeActionsOnSave": {
         "source.fixAll.stylelint": true
